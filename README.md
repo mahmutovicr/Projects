@@ -1,5 +1,5 @@
 ## 📋 About
-A curated collection of web development projects showcasing 
+A collection of web development projects showcasing 
 progressive skill development in both frontend and backend technologies.
 
 Each project explores different concepts and techniques in modern web development.
