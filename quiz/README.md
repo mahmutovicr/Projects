@@ -1,6 +1,6 @@
 # Quiz Game
 
-<p align="center">
+p align="center">
   <img src="quiz_start.png" alt="Start Screen" width="30%"/>
   <img src="quiz_question.png" alt="Quiz Question" width="30%"/>
   <img src="quiz_results.png" alt="Results Screen" width="30%"/>
