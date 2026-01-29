@@ -1,12 +1,11 @@
 # Quiz Game
 
 <p align="center">
-  <img src="quiz_start.png" alt="Start Screen" width="30%"/>
-  <img src="quiz_question.png" alt="Quiz Question" width="30%"/>
-  <img src="quiz_results.png" alt="Results Screen" width="30%"/>
-</p>
-<p align="center">
-  <em>Start Screen &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Quiz Question &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Results Screen</em>
+  <em>Start Screen</em>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <em>Quiz Question</em>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <em>Results Screen</em>
 </p>
 
 ## About
