@@ -1,16 +1,18 @@
-## 📋 About
-A collection of web development projects showcasing 
-progressive skill development in both frontend and backend technologies.
+## About 
 
-Each project explores different concepts and techniques in modern web development.
+A collection of web development projects.
 
-## 🛠️ Tech Stack
+## Tech Stack
+
+- HTML
+- CSS
 - JavaScript
 - React
-- HTML5 & CSS3
 - PHP
 - MySQL
 
-## 📬 Contact
+## Contact
 
-📧 mahmutovicrahman5@gmail.com
+Email: mahmutovicrahman5@gmail.com
+
+LinkedIn: https://www.linkedin.com/in/rahmanmahmutovi%C4%87

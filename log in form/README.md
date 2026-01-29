@@ -8,11 +8,11 @@
   <em>Login Page &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Registration Page</em>
 </p>
 
-<u>**About**</u>
+## About
 
 A secure user authentication system built with PHP and MySQL featuring registration, login, and session management.
 
-<u>**Features**</u>
+## Features
 
 - User registration and login
 - Password hashing with bcrypt
@@ -21,17 +21,17 @@ A secure user authentication system built with PHP and MySQL featuring registrat
 - SQL injection prevention using prepared statements
 - Responsive design with Bootstrap 5
 
-<u>**Tech Stack**</u>
+## Tech Stack
 
 PHP | MySQL | HTML | CSS | Bootstrap 5
 
-<u>**Requirements**</u>
+## Requirements
 
 - PHP 7.4 or higher
 - MySQL 5.7 or higher
 - Apache server (XAMPP, WAMP, or similar)
 
-<u>**Database Setup**</u>
+## Database Setup
 
 1. Create a MySQL database named `login_register`
 2. Create the `users` table with the following structure:
@@ -52,7 +52,7 @@ CREATE TABLE users (
    - Username: `root`
    - Password: `` (empty by default)
 
-<u>**Installation**</u>
+## Installation
 
 1. Clone the repository or download the files
 2. Place files in your web server directory (e.g., `htdocs` for XAMPP)
@@ -60,19 +60,16 @@ CREATE TABLE users (
 4. Start Apache and MySQL servers
 5. Navigate to `http://localhost/log-in-form/registration.php` to create an account
 
-<u>**Security Notes**</u>
 
-⚠️ **Important**: This is a learning project. For production use:
+## ⚠️ For production use:
+
 - Change database credentials from defaults
 - Enable HTTPS
 - Add CSRF protection
 - Implement rate limiting
 - Add email verification
 
-<u>**Contact**</u>
-
-📧 mahmutovicrahman5@gmail.com
-
-<u>**License**</u>
+## License
 
 MIT License - See [LICENSE](../LICENSE) file for details
+
