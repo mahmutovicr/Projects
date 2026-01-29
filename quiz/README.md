@@ -9,11 +9,11 @@
   <em>Start Screen &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Quiz Question &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Results Screen</em>
 </p>
 
-<ins>**About**</ins>
+<u>**About**</u>
 
 An interactive quiz game testing general knowledge across multiple topics with score tracking and instant feedback.
 
-<ins>**Features**</ins>
+<u>**Features**</u>
 
 - Multiple choice questions
 - Score tracking
@@ -21,10 +21,10 @@ An interactive quiz game testing general knowledge across multiple topics with s
 - Instant answer feedback
 - Responsive design
 
-<ins>**Tech Stack**</ins>
+<u>**Tech Stack**</u>
 
 HTML | CSS | JavaScript
 
-<ins>**License**</ins>
+<u>**License**</u>
 
 MIT License - See [LICENSE](../LICENSE) file for details
