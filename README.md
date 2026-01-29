@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Color Palette Generator
 
 ![Color Palette Generator](image.png)
@@ -21,3 +22,24 @@ A simple web application for generating random color palettes with an intuitive 
 - JavaScript
 
 
+=======
+## 📋 About
+
+-A collection of web development projects. 
+
+-Each project shows different concepts and techniques in modern web development.
+
+## 🛠️ Tech Stack
+
+- JavaScript
+- React
+- HTML5 & CSS3
+- PHP
+- MySQL
+
+## 📬 Contact
+
+-Email: mahmutovicrahman5@gmail.com
+
+-LinkedIn: https://www.linkedin.com/in/rahmanmahmutovi%C4%87
+>>>>>>> 7b2936b852015428f27567056f1a96c280cce1da
