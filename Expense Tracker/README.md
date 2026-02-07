@@ -6,7 +6,7 @@ A simple and intuitive web application for tracking personal income and expenses
 
 ## Live Demo
 
-🔗https://expensetracker27.netlify.app/
+https://expensetracker27.netlify.app/
 
 ## Features
 
