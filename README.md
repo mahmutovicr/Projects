@@ -4,8 +4,6 @@ A collection of web development projects.
 
 ## Project Navigation
 
-## Project Navigation
-
 * [Color Palette Generator](./Color%20Palette%20Generator/) – Automated tool for random palette generation and hex code extraction
 * [Expense Tracker](./Expense%20Tracker/) – Financial management system with real-time balance tracking and transaction history
 * [Loruki Website](./Loruki%20Website/) – Responsive cloud hosting landing page focusing on modern layout architecture
