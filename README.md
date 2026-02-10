@@ -15,7 +15,6 @@ A collection of web development projects.
 - HTML
 - CSS
 - JavaScript
-- React
 - PHP
 - MySQL
 
