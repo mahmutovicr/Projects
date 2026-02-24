@@ -6,7 +6,7 @@
 
 A simple web application for generating random color palettes with an intuitive interface.
 
-## Live demo
+## Live Demo
 
 https://color-pallete-generator27.netlify.app/
 
