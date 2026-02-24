@@ -22,11 +22,9 @@ https://expensetracker27.netlify.app/
 3. Click "Add Transaction" to record
 4. View your updated balance and transaction history
 
-## Technology Stack
+## Tech Stack
 
-- HTML5
-- CSS3
-- JavaScript
+HTML5 | CSS3 | JavaScript
 
 ## License
 
