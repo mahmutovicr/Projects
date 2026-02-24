@@ -4,7 +4,7 @@
 A responsive pricing page with animated billing toggle for monthly and annual plans.
 
 ## Live Demo
-https://your-live-link.netlify.app/
+https://pricingcards30.netlify.app/
 
 ## Features
 - **Billing Toggle** - Animated switch between monthly and annual pricing
