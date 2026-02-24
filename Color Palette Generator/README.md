@@ -14,10 +14,11 @@ A simple web application for generating random color palettes with an intuitive 
 - **Responsive Design**: Adapts to different screen sizes
 - **Modern UI**: Clean interface with gradient backgrounds and smooth animations
 
-## Technologies
+## Tech Stack
 
 - HTML5
 - CSS3
 - JavaScript
+
 
 
