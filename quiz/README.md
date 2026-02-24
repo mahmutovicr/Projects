@@ -17,6 +17,10 @@
 
 An interactive quiz game testing general knowledge across multiple topics with score tracking and instant feedback.
 
+## Live Demo
+
+https://quiz-game88.netlify.app
+
 ## Features
 
 - Multiple choice questions
