@@ -2,8 +2,6 @@
 
 ![Color Palette Generator](image.png)
 
-## About
-
 A simple web application for generating random color palettes with an intuitive interface.
 
 ## Live Demo
