@@ -2,7 +2,7 @@
 
 ![Color Palette Generator](image.png)
 
-A simple web application for generating random color palettes with an intuitive interface.
+<p align="center">A web app that generates random color palettes with instant hex code copying</p>
 
 ## Live Demo
 
