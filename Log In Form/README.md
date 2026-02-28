@@ -1,16 +1,15 @@
 # Log In Form
 
-<p align="center">
-  <img src="Log_in_Form_scr.webp" alt="Login Page" width="45%"/>
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="Log_in_Form.webp" alt="Registration Page" width="45%"/>
-</p>
-
-<p align="center">
-  <span style="display:inline-block; width:45%; text-align:center"><em>Log in page</em></span>
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <span style="display:inline-block; width:45%; text-align:center"><em>Registration Page</em></span>
-</p>
+<table align="center">
+  <tr>
+    <td align="center"><img src="Log_in_Form_scr.webp" alt="Login Page" width="100%"/></td>
+    <td align="center"><img src="Log_in_Form.webp" alt="Registration Page" width="100%"/></td>
+  </tr>
+  <tr>
+    <td align="center"><em>Log in page</em></td>
+    <td align="center"><em>Registration Page</em></td>
+  </tr>
+</table>
 
 ## About
 
