@@ -5,7 +5,7 @@
 </div>
 
 <div align="center">
-Convert currencies instantly with real-time exchange rates from around the world.
+A web app that converts currencies using live exchange rates from around the world.
 </div>
 
 ## Live Demo
