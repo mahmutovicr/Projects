@@ -1,6 +1,6 @@
 ## About 
 
-A collection of web development projects.
+Web projects covering interactive interfaces, dynamic functionality and responsive design
 
 ## Project Navigation
 
