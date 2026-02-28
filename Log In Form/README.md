@@ -13,7 +13,7 @@
 
 ## About
 
-A secure user authentication system built with PHP and MySQL featuring registration, login, and session management.
+A secure user authentication system built with PHP and MySQL featuring registration, log in and session management.
 
 ## Features
 
