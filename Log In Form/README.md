@@ -11,7 +11,8 @@
   </tr>
 </table>
 
-A secure user authentication system built with PHP and MySQL featuring registration, log in and session management
+A secure authentication system with user
+registration, log in and session management
 
 ## Features
 
