@@ -2,7 +2,7 @@
 
 ![Loruki Website](loruki-website.png)
 
-A modern, responsive cloud hosting website built with HTML, CSS, and JavaScript.
+A modern, responsive cloud hosting website built with HTML, CSS, and JavaScript
 
 ## Live Demo
 
