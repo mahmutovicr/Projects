@@ -1,4 +1,4 @@
-# Log in Form
+# Log in form
 
 <p align="center">
   <img src="Log_in_Form_scr.webp" alt="Login Page" width="45%"/>
@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <em>Login Page</em>
+  <em>Log in page</em>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <em>Registration Page</em>
 </p>
