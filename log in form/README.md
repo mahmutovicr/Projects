@@ -1,4 +1,4 @@
-# Log in form
+# Log In Form
 
 <p align="center">
   <img src="Log_in_Form_scr.webp" alt="Login Page" width="45%"/>
