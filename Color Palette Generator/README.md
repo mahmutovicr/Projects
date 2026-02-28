@@ -6,6 +6,10 @@
 
 A simple web application for generating random color palettes with an intuitive interface.
 
+## Live Demo
+
+https://color-pallete-generator27.netlify.app/
+
 ## Features
 
 - **Random Palette Generation**: Generate five random colors with a single click
@@ -14,10 +18,11 @@ A simple web application for generating random color palettes with an intuitive 
 - **Responsive Design**: Adapts to different screen sizes
 - **Modern UI**: Clean interface with gradient backgrounds and smooth animations
 
-## Technologies
+## Tech Stack
 
 - HTML5
 - CSS3
 - JavaScript
+
 
 
