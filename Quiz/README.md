@@ -15,7 +15,7 @@
 
 ## About
 
-An interactive quiz game testing general knowledge across multiple topics with score tracking and instant feedback.
+An interactive quiz game testing general knowledge across multiple topics with score tracking and instant feedback
 
 ## Live Demo
 
