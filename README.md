@@ -10,7 +10,7 @@ A collection of web development projects.
 * [Log In Form](./log%20in%20form/) – Secure authentication system featuring password hashing and session management
 * [Quiz App](./quiz/) – Interactive assessment platform with dynamic scoring and visual progress tracking
 * [Pricing Cards](./Pricing%20Cards/) – Responsive pricing page with animated billing toggle and plan comparison
-* [Currency Converter](./Currency%20converter/) – Currency converter with live exchange rates and global currency support
+* [Currency Converter](./Currency%20Converter/) – Currency converter with live exchange rates and global currency support
 
 ## Tech Stack
 
