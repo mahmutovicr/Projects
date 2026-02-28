@@ -2,7 +2,7 @@
 
 ![Expense Tracker Screenshot](screenshot.png)
 
-A simple and intuitive web application for tracking personal income and expenses.
+A personal finance tracker for managing income, expenses and balance
 
 ## Live Demo
 
