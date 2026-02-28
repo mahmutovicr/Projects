@@ -39,6 +39,7 @@ h1 {
  color: var(--text-primary);   
  margin-bottom: 25px;
  font-size: 1.8rem;
+ white-space: nowrap;
 }
 
 .form-group {
