@@ -4,7 +4,9 @@
   <img src="Currency-converter.png" alt="Currency Converter Preview" />
 </div>
 
+<div align="center">
 Convert currencies instantly with real-time exchange rates from around the world.
+</div>
 
 ## Live Demo
 https://currency-converter33.netlify.app/
