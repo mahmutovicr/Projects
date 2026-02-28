@@ -5,11 +5,12 @@
   <img src="Log_in_Form.webp" alt="Registration Page" width="45%"/>
 </p>
 
-<p align="center">
-  <em>Log in page</em>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <em>Registration Page</em>
-</p>
+<table align="center" width="90%" border="0">
+  <tr>
+    <td align="center" width="50%"><em>Log in page</em></td>
+    <td align="center" width="50%"><em>Registration Page</em></td>
+  </tr>
+</table>
 
 ## About
 
