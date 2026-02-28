@@ -58,7 +58,7 @@ input,select {
  background-color: var(--bg-input);
  border: 1px solid var(--border-color);  
  border-radius: 5px;
- font-size: 1.1rem;
+ font-size: 16px;
  font-family: "Inter",sans-serif;
  color: var(--text-primary)
 }
@@ -98,7 +98,14 @@ button:hover {
  color: var(--text-primary);
 }
 
-
+@media (max-width: 480px) {
+ h1 {
+ font-size: 1.4rem;
+ }
+.container {
+padding: 20px;
+ }
+}
 
 
 
