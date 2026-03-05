@@ -1,15 +1,18 @@
+<div align="center">
+
 # Currency Converter
 
-<div align="center">
-  <img src="Currency-converter.png" alt="Currency Converter Preview" />
 </div>
 
 <div align="center">
-Convert currencies instantly with real-time exchange rates from around the world.
+  <img src="currency-converter.png" alt="Currency Converter Preview" />
 </div>
+
+## About
+Convert currencies instantly with live exchange rates from around the world
 
 ## Live Demo
-https://currency-converter33.netlify.app/
+https://currency-converter-vert-one.vercel.app/
 
 ## Features
 - **Live Exchange Rates** - Fetched via ExchangeRate API
@@ -19,9 +22,6 @@ https://currency-converter33.netlify.app/
 
 ## Tech Stack
 HTML5 | CSS3 | JavaScript
-
-## Contact
-mahmutovicrahman5@gmail.com
 
 ## License
 MIT License

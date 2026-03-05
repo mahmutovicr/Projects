@@ -1,12 +1,16 @@
+<div align="center">
+
 # Expense Tracker
 
-![Expense Tracker Screenshot](screenshot.png)
+</div>
 
-A simple and intuitive web application for tracking personal income and expenses.
+![Expense Tracker Screenshot](expense-tracker.png)
+
+## About
+A simple and intuitive web application for tracking personal income and expenses
 
 ## Live Demo
-
-https://expensetracker27.netlify.app/
+https://expense-tracker-six-olive.vercel.app/
 
 ## Features
 
@@ -17,10 +21,10 @@ https://expensetracker27.netlify.app/
 
 ## Usage
 
-1. Enter a transaction description
-2. Input the amount (use negative values for expenses)
-3. Click "Add Transaction" to record
-4. View your updated balance and transaction history
+- Enter a transaction description
+- Input the amount (use negative values for expenses)
+- Click "Add Transaction" to record
+- View your updated balance and transaction history
 
 ## Tech Stack
 

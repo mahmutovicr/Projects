@@ -1,41 +1,27 @@
-﻿# Log in Form
+<div align="center">
 
-<p align="center">
-  <img src="Log_in_Form_scr.webp" alt="Login Page" width="45%"/>
-  <img src="Log_in_Form.webp" alt="Registration Page" width="45%"/>
-</p>
-<p align="center">
-  <em>Login Page &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Registration Page</em>
-</p>
+# Log In Form
+
+</div>
+
+<table>
+  <tr>
+    <td align="center" width="50%"><img src="log_in_form.webp" alt="Login Page" width="100%"/><br/><b>Log in Page</b></td>
+    <td align="center" width="50%"><img src="log_in_form2.webp" alt="Registration Page" width="100%"/><br/><b>Registration Page</b></td>
+  </tr>
+</table>
 
 ## About
 
-A secure user authentication system built with PHP and MySQL featuring registration, login, and session management.
-
-## Features
-
-- User registration and login
-- Password hashing with bcrypt
-- Session-based authentication
-- Form validation and error handling
-- SQL injection prevention using prepared statements
-- Responsive design with Bootstrap 5
+A secure authentication system with user registration, login, and session management
 
 ## Tech Stack
 
 PHP | MySQL | HTML | CSS | Bootstrap 5
 
-## Requirements
-
-- PHP 7.4 or higher
-- MySQL 5.7 or higher
-- Apache server (XAMPP, WAMP, or similar)
-
 ## Database Setup
 
-1. Create a MySQL database named `login_register`
-2. Create the `users` table with the following structure:
-
+Create a database named `login_register` and run:
 ```sql
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -46,24 +32,17 @@ CREATE TABLE users (
 );
 ```
 
-3. Update database credentials in `database.php`:
-   - Default port: `3307` (change if needed)
-   - Host: `localhost`
-   - Username: `root`
-   - Password: `` (empty by default)
-
 ## Installation
 
-1. Clone the repository or download the files
-2. Place files in your web server directory (e.g., `htdocs` for XAMPP)
-3. Configure database connection in `database.php`
-4. Start Apache and MySQL servers
-5. Navigate to `http://localhost/log-in-form/registration.php` to create an account
+- Clone the repository and place files in your server's web directory (e.g., `htdocs`)
+- Update database credentials in `database.php` (default port: `3307`)
+- Start Apache and MySQL
+- Navigate to `http://localhost/log-in-form/registration.php`
 
+## Production
 
-## ΓÜá∩╕Å For production use:
-
-- Change database credentials from defaults
+Before deploying:
+- Change default database credentials
 - Enable HTTPS
 - Add CSRF protection
 - Implement rate limiting
@@ -71,5 +50,4 @@ CREATE TABLE users (
 
 ## License
 
-MIT License - See [LICENSE](../LICENSE) file for details
-
+MIT License

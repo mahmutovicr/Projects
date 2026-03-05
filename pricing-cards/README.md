@@ -1,10 +1,16 @@
+<div align="center">
+
 # Pricing Cards
+
+</div>
+
 ![Pricing Cards Preview](pricing-preview.png)
 
-A responsive pricing page with animated billing toggle for monthly and annual plans.
+## About
+A responsive pricing page with animated billing toggle for monthly and annual plans
 
 ## Live Demo
-https://pricingcards30.netlify.app/
+https://pricing-cards-phi.vercel.app/
 
 ## Features
 - **Billing Toggle** - Animated switch between monthly and annual pricing
@@ -14,12 +20,7 @@ https://pricingcards30.netlify.app/
 - **Smooth Animations** - Animated price transitions and hover effects
 
 ## Tech Stack
-- HTML5
-- CSS3
-- JavaScript
-
-## Contact
-mahmutovicrahman5@gmail.com
+HTML5 | CSS3 | JavaScript
 
 ## License
 MIT License

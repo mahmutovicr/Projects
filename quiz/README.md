@@ -1,17 +1,22 @@
-﻿# Quiz Game
+<div align="center">
 
-<p align="center">
-  <img src="quiz_start.png" alt="Start Screen" width="30%"/>
-  <img src="quiz_question.png" alt="Quiz Question" width="30%"/>
-  <img src="quiz_results.png" alt="Results Screen" width="30%"/>
-</p>
-<p align="center">
-  <em>Start Screen &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Quiz Question &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Results Screen</em>
-</p>
+# Quiz Game
+
+</div>
+
+<table>
+  <tr>
+    <td align="center" width="33%"><img src="quiz_start.png" alt="Start Screen" width="100%"/><br/><b>Start Screen</b></td>
+    <td align="center" width="33%"><img src="quiz_question.png" alt="Quiz Question" width="100%"/><br/><b>Quiz Question</b></td>
+    <td align="center" width="33%"><img src="quiz_results.png" alt="Results Screen" width="100%"/><br/><b>Results Screen</b></td>
+  </tr>
+</table>
 
 ## About
+An interactive quiz game testing general knowledge across multiple topics with score tracking and instant feedback
 
-An interactive quiz game testing general knowledge across multiple topics with score tracking and instant feedback.
+## Live Demo
+https://quiz-omega-three-97.vercel.app/
 
 ## Features
 
@@ -27,4 +32,4 @@ HTML | CSS | JavaScript
 
 ## License
 
-MIT License - See [LICENSE](../LICENSE) file for details
+MIT License

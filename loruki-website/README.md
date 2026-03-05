@@ -1,29 +1,26 @@
-﻿# Loruki - Cloud Hosting Platform
+<div align="center">
 
-A modern, responsive cloud hosting website built with HTML, CSS, and JavaScript.
+# Loruki Website
 
-## Live Demo
+</div>
 
-[View Live Site](https://loruki-demo-website-2.netlify.app/)
+![Loruki Website Preview](loruki-website.png)
 
 ## About
+A modern, responsive cloud hosting platform for deploying web applications
 
-Loruki is a cloud hosting platform website designed for deploying web applications. It showcases a professional interface for users to explore hosting features, request demos, and access documentation for deploying applications with support for multiple programming languages.
-
-## Technologies
-
-- HTML5
-- CSS3
-- JavaScript
+## Live Demo
+https://loruki-website-alpha.vercel.app/
 
 ## Features
+- Responsive multi-page layout (Home, Features, Docs)
+- Demo request form
+- Cross-platform CLI support
+- Scalable cloud hosting infrastructure
+- Multi-language support for both frontend and backend development
 
-- Fully responsive design
-- Multi-page layout (Home, Features, Docs)
-- Interactive demo request form
-- Support for 8+ programming languages
-- Modern UI with clean interface
+## Tech Stack
+HTML5 | CSS3 | JavaScript
 
 ## License
-
 MIT License

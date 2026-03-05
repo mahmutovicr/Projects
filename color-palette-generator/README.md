@@ -1,10 +1,16 @@
-﻿# Color Palette Generator
+<div align="center">
+
+# Color Palette Generator
+
+</div>
 
 ![Color Palette Generator](image.png)
 
 ## About
+A web application for generating random color palettes with an intuitive interface
 
-A simple web application for generating random color palettes with an intuitive interface.
+## Live Demo
+https://color-palette-generator-beta-opal.vercel.app/
 
 ## Features
 
@@ -14,10 +20,10 @@ A simple web application for generating random color palettes with an intuitive 
 - **Responsive Design**: Adapts to different screen sizes
 - **Modern UI**: Clean interface with gradient backgrounds and smooth animations
 
-## Technologies
+## Tech Stack
 
-- HTML5
-- CSS3
-- JavaScript
+HTML5 | CSS3 | JavaScript
 
+## License
 
+MIT License
