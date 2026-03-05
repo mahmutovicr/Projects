@@ -4,12 +4,6 @@ Web projects covering interactive interfaces, dynamic functionality and responsi
 
 ## Project Navigation
 
-## About
-
-Web projects covering interactive interfaces, dynamic functionality and responsive design
-
-## Project Navigation
-
 * [Color Palette Generator](./color-palette-generator/) – Automated tool for random palette generation and hex code extraction
 * [Currency Converter](./currency-converter/) – Currency converter with live exchange rates and global currency support
 * [Expense Tracker](./expense-tracker/) – Financial management system with real-time balance tracking and transaction history
@@ -27,19 +21,5 @@ Web projects covering interactive interfaces, dynamic functionality and responsi
 - MySQL
 
 ## Contact
-
-Email: mahmutovicrahman5@gmail.com
-
-## Tech Stack
-
-- HTML
-- CSS
-- JavaScript
-- PHP
-- MySQL
-
-## Contact
-
-Email: mahmutovicrahman5@gmail.com
 
 LinkedIn: https://www.linkedin.com/in/rahmanmahmutovi%C4%87
