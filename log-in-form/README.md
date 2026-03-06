@@ -13,7 +13,7 @@
 
 ## About
 
-A secure authentication system with user registration, login, and session management
+A secure authentication system with user registration, log in and session management
 
 ## Tech Stack
 
