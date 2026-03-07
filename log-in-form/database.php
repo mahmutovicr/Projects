@@ -1,14 +1,11 @@
-<?php 
+<?php
+$hostName = "sqlXXX.infinityfree.com";
+$dbUser = "your_db_username";
+$dbPassword = "your_db_password";
+$dbName = "your_db_name";
 
-
-$hostName = "localhost";
-$dbUser = "root";
-$dbPassword = "";
-$dbName = "login_register";
-$conn = mysqli_connect("localhost", "root", "", "login_register", 3307);
+$conn = mysqli_connect($hostName, $dbUser, $dbPassword, $dbName);
 if (!$conn) {
- die("Connection failed: ".mysqli_connect_error());
+    die("Connection failed: " . mysqli_connect_error());
 }
-
-
 ?>
