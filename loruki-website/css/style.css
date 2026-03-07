@@ -131,15 +131,17 @@ code, pre {
     line-height: 1.1;
     color: #fff;
     letter-spacing: -0.5px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.25);
 }
 
 .showcase-text p {
     font-size: 1rem;
-    font-weight: 400;
-    color: rgba(255,255,255,0.85);
+    font-weight: 500;
+    color: #fff;
     margin: 18px 0 24px;
     line-height: 1.7;
     max-width: 420px;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.2);
 }
 
 .showcase .grid {
@@ -162,7 +164,8 @@ code, pre {
     animation: slideInFromRight 0.45s ease-out;
     background: #fff;
     border-radius: 12px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.18);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,255,255,0.15);
 }
 
 .showcase-form h2 {
@@ -412,6 +415,11 @@ code, pre {
     color: var(--primary-color);
     font-size: 1.1rem;
     flex-shrink: 0;
+}
+
+.feature-icon-wrap i {
+    font-size: 1.1rem;
+    color: var(--primary-color);
 }
 
 .features-main .card h3 {
