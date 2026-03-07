@@ -1,5 +1,9 @@
 <?php
+ini_set('session.cookie_httponly', 1);
+ini_set('session.cookie_secure', 1);
+ini_set('session.cookie_samesite', 'Strict');
 session_start();
+
 if (isset($_SESSION["user"])) {
     header("Location: index.php");
     exit();
@@ -30,7 +34,7 @@ $_SESSION["csrf_token"] = $csrf_token;
         $password = $_POST["password"];
         require_once "database.php";
 
-        $sql = "SELECT * FROM users WHERE email = ?";
+        $sql = "SELECT id, password, failed_attempts, lockout_time FROM users WHERE email = ?";
         $stmt = mysqli_stmt_init($conn);
         mysqli_stmt_prepare($stmt, $sql);
         mysqli_stmt_bind_param($stmt, "s", $email);
@@ -38,11 +42,34 @@ $_SESSION["csrf_token"] = $csrf_token;
         $result = mysqli_stmt_get_result($stmt);
         $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
-        if ($user && password_verify($password, $user["password"])) {
-            session_regenerate_id(true);
-            $_SESSION["user"] = $user["id"];
-            header("Location: index.php");
-            exit();
+        if ($user) {
+            if ($user["lockout_time"] && (time() - strtotime($user["lockout_time"])) < 900) {
+                echo "<div class='alert alert-danger'>Too many failed attempts. Try again in 15 minutes.</div>";
+            } elseif (password_verify($password, $user["password"])) {
+                $reset = "UPDATE users SET failed_attempts = 0, lockout_time = NULL WHERE id = ?";
+                $stmt2 = mysqli_stmt_init($conn);
+                mysqli_stmt_prepare($stmt2, $reset);
+                mysqli_stmt_bind_param($stmt2, "i", $user["id"]);
+                mysqli_stmt_execute($stmt2);
+
+                session_regenerate_id(true);
+                $_SESSION["user"] = $user["id"];
+                header("Location: index.php");
+                exit();
+            } else {
+                $attempts = $user["failed_attempts"] + 1;
+                if ($attempts >= 5) {
+                    $lock = "UPDATE users SET failed_attempts = ?, lockout_time = NOW() WHERE id = ?";
+                } else {
+                    $lock = "UPDATE users SET failed_attempts = ?, lockout_time = NULL WHERE id = ?";
+                }
+                $stmt3 = mysqli_stmt_init($conn);
+                mysqli_stmt_prepare($stmt3, $lock);
+                mysqli_stmt_bind_param($stmt3, "ii", $attempts, $user["id"]);
+                mysqli_stmt_execute($stmt3);
+
+                echo "<div class='alert alert-danger'>Invalid email or password.</div>";
+            }
         } else {
             echo "<div class='alert alert-danger'>Invalid email or password.</div>";
         }
