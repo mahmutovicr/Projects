@@ -4,6 +4,9 @@ if (isset($_SESSION["user"])) {
     header("Location: index.php");
     exit();
 }
+
+$csrf_token = bin2hex(random_bytes(32));
+$_SESSION["csrf_token"] = $csrf_token;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,6 +22,10 @@ if (isset($_SESSION["user"])) {
 <div class="container">
     <?php
     if (isset($_POST["log-in"])) {
+        if (!isset($_POST["csrf_token"]) || !hash_equals($_SESSION["csrf_token"], $_POST["csrf_token"])) {
+            die("Invalid CSRF token.");
+        }
+
         $email = $_POST["email"];
         $password = $_POST["password"];
         require_once "database.php";
@@ -32,7 +39,8 @@ if (isset($_SESSION["user"])) {
         $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
         if ($user && password_verify($password, $user["password"])) {
-            $_SESSION["user"] = "yes";
+            session_regenerate_id(true);
+            $_SESSION["user"] = $user["id"];
             header("Location: index.php");
             exit();
         } else {
@@ -41,6 +49,7 @@ if (isset($_SESSION["user"])) {
     }
     ?>
     <form action="login.php" method="post">
+        <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars($csrf_token); ?>">
         <div class="form-group">
             <input type="email" placeholder="Enter Email:" name="email" class="form-control">
         </div>
