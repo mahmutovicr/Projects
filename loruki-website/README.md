@@ -20,7 +20,7 @@ https://loruki-website-alpha.vercel.app/
 - Multi-language support for both frontend and backend development
 
 ## Tech Stack
-HTML5 | CSS3 | JavaScript
+HTML5 | CSS3 
 
 ## License
 MIT License
