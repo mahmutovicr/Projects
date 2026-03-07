@@ -4,6 +4,9 @@ if (isset($_SESSION["user"])) {
     header("Location: index.php");
     exit();
 }
+
+$csrf_token = bin2hex(random_bytes(32));
+$_SESSION["csrf_token"] = $csrf_token;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,11 +22,14 @@ if (isset($_SESSION["user"])) {
 <div class="container">
     <?php
     if (isset($_POST["submit"])) {
+        if (!isset($_POST["csrf_token"]) || !hash_equals($_SESSION["csrf_token"], $_POST["csrf_token"])) {
+            die("Invalid CSRF token.");
+        }
+
         $fullName = $_POST["fullname"];
         $email = $_POST["email"];
         $password = $_POST["password"];
         $passwordRepeat = $_POST["repeat_password"];
-        $passwordHash = password_hash($password, PASSWORD_DEFAULT);
         $errors = array();
 
         if (empty($fullName) OR empty($email) OR empty($password) OR empty($passwordRepeat)) {
@@ -41,7 +47,7 @@ if (isset($_SESSION["user"])) {
 
         require_once "database.php";
 
-        $sql = "SELECT * FROM users WHERE email = ?";
+        $sql = "SELECT id FROM users WHERE email = ?";
         $stmt = mysqli_stmt_init($conn);
         mysqli_stmt_prepare($stmt, $sql);
         mysqli_stmt_bind_param($stmt, "s", $email);
@@ -56,12 +62,14 @@ if (isset($_SESSION["user"])) {
                 echo "<div class='alert alert-danger'>$error</div>";
             }
         } else {
+            $passwordHash = password_hash($password, PASSWORD_DEFAULT);
+
             $sql = "INSERT INTO users (full_name, email, password) VALUES (?, ?, ?)";
             $stmt = mysqli_stmt_init($conn);
             if (mysqli_stmt_prepare($stmt, $sql)) {
                 mysqli_stmt_bind_param($stmt, "sss", $fullName, $email, $passwordHash);
                 mysqli_stmt_execute($stmt);
-                echo "<div class='alert alert-success'>You are registered successfully.</div>";
+                echo "<div class='alert alert-success'>Registered successfully. <a href='login.php'>Log in here</a>.</div>";
             } else {
                 die("Something went wrong.");
             }
@@ -69,6 +77,7 @@ if (isset($_SESSION["user"])) {
     }
     ?>
     <form action="registration.php" method="post">
+        <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars($csrf_token); ?>">
         <div class="form-group">
             <input type="text" class="form-control" name="fullname" placeholder="Full Name:">
         </div>
