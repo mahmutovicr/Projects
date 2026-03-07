@@ -38,7 +38,7 @@ h1, h2 {
 }
 
 p {
-    font-size: large;
+    font-size: 1rem;
     margin: 10px 0;
 }
 
@@ -98,7 +98,7 @@ code, pre {
 }
 
 .showcase-text p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin: 20px 0;
 }
 
@@ -168,7 +168,7 @@ code, pre {
 }
 
 .stats-heading {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     max-width: 500px;
     margin: auto;
     text-align: center;
@@ -179,7 +179,7 @@ code, pre {
 }
 
 .stats .grid p {
-    font-size: 20px;
+    font-size: 0.9rem;
     font-weight: 500;
 }
 
@@ -243,12 +243,20 @@ code, pre {
 
 .features-head p,
 .features-sub-head p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .features-sub-head img {
     width: 300px;
     justify-self: flex-end;
+}
+
+.features-main .card {
+    transition: transform 0.2s ease-out;
+}
+
+.features-main .card:hover {
+    transform: translateY(-8px);
 }
 
 .features-main .card > i {
@@ -292,13 +300,13 @@ code, pre {
 }
 
 .docs-head h1.md {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 400;
     margin-bottom: 20px;
 }
 
 .docs-head p {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     max-width: 600px;
     margin: 0 auto 20px;
     line-height: 1.6;
@@ -422,7 +430,7 @@ code, pre {
     }
 
     .features-head p {
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
 
     .features-sub-head p {
@@ -436,12 +444,12 @@ code, pre {
     }
 
     .docs-head h1.md {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
         margin-bottom: 15px;
     }
 
     .docs-head p {
-        font-size: 1.5rem;
+        font-size: 1rem;
         max-width: 100%;
         margin: 0 auto 15px;
         line-height: 1.6;
