@@ -9,27 +9,32 @@
     background-color: #fff;
     color: #333;
     border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
     padding: 20px;
     margin: 10px;
 }
 
 .btn {
     display: inline-block;
-    padding: 10px 30px;
+    padding: 9px 26px;
     cursor: pointer;
     background: var(--primary-color);
     color: #fff;
     border: none;
     border-radius: 5px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    transition: opacity 0.2s, transform 0.15s;
 }
 
 .btn-outline {
     background-color: transparent;
-    border: 1px #fff solid;
+    border: 1.5px #fff solid;
 }
 
 .btn:hover {
+    opacity: 0.88;
     transform: scale(0.98);
 }
 
@@ -88,23 +93,28 @@
 }
 
 .lead {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255,255,255,0.85);
 }
 
 .sm {
-    font-size: 0.875rem;
+    font-size: 0.8rem;
 }
 
 .md {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 .lg {
-    font-size: 2.25rem;
+    font-size: 1.875rem;
+    font-weight: 800;
 }
 
 .xl {
-    font-size: 2.75rem;
+    font-size: 2.25rem;
+    font-weight: 800;
 }
 
 .text-center {
@@ -113,9 +123,11 @@
 
 .alert {
     background-color: var(--light-color);
-    padding: 10px 20px;
+    padding: 12px 18px;
     font-weight: 400;
+    font-size: 0.875rem;
     margin: 15px 0;
+    border-radius: 6px;
 }
 
 .alert i {
