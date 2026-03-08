@@ -83,11 +83,13 @@ $_SESSION["csrf_token"] = $csrf_token;
         <div class="form-group">
             <input type="password" placeholder="Enter Password:" name="password" class="form-control">
         </div>
-        <div class="form-btn">
-            <input type="submit" value="Log in" name="log-in" class="btn btn-primary">
-        </div>
-    </form>
-    <div><p>Not registered yet? <a href="registration.php">Register Here</a></p></div>
+       <div class="form-btn">
+    <input type="submit" value="Log in" name="log-in" class="btn btn-primary">
+  </div>
+  </form>
+  <div style="margin-top: 10px;">
+    <a href="registration.php" class="btn btn-primary">Register</a>
+</div>
 </div>
 </body>
 </html>
