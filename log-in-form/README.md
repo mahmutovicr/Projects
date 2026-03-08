@@ -15,27 +15,32 @@
 
 A secure authentication system with user registration, log in and session management
 
+## Live Demo
+
+https://loginform.infinityfreeapp.com/login.php
+
 ## Tech Stack
 
 PHP | MySQL | HTML | CSS | Bootstrap 5
 
 ## Database Setup
 
-Create a database named `login_register` and run:
+Create a database and run:
 ```sql
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    full_name VARCHAR(255) NOT NULL,
-    email VARCHAR(255) UNIQUE NOT NULL,
-    password VARCHAR(255) NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    full_name VARCHAR(100),
+    email VARCHAR(100) UNIQUE,
+    password VARCHAR(255),
+    failed_attempts INT DEFAULT 0,
+    lockout_time DATETIME DEFAULT NULL
 );
 ```
 
 ## Installation
 
 - Clone the repository and place files in your server's web directory (e.g., `htdocs`)
-- Update database credentials in `database.php` (default port: `3307`)
+- Update database credentials in `database.php`
 - Start Apache and MySQL
 - Navigate to `http://localhost/log-in-form/registration.php`
 
