@@ -98,7 +98,7 @@ $_SESSION["csrf_token"] = $csrf_token;
             <input type="submit" class="btn btn-primary" value="Register" name="submit">
         </div>
     </form>
-    <div><a href="login.php" class="btn btn-primary">Log in</a></div>
+    <div style="margin-top: 10px;"><a href="login.php" class="btn btn-primary">Log in</a></div> 
 </div>
 </body>
 </html>
