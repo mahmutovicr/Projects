@@ -15,11 +15,7 @@ Web projects covering interactive interfaces, dynamic functionality and responsi
 
 ## Tech Stack
 
-- HTML
-- CSS
-- JavaScript
-- PHP
-- MySQL
+[![Skills](https://skillicons.dev/icons?i=html,css,js,php,mysql)](https://skillicons.dev)
 
 ## Contact
 
