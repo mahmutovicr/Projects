@@ -6,7 +6,7 @@ const lblAnnual = document.getElementById('lbl-annual');
 const monthly = [9, 29, 79];
 const annual = [7, 23, 63];
 
-let currentMode = 'neutral';
+let currentMode = 'monthly';
 
 function setMode(mode) {
   currentMode = mode;
@@ -49,6 +49,9 @@ track.addEventListener('click', e => {
   else if (x < third * 2) setMode('neutral');
   else setMode('annual');
 });
+
+lblMonthly.addEventListener('click', () => setMode('monthly'));
+lblAnnual.addEventListener('click', () => setMode('annual'));
 
 let selectedCard = null;
 
@@ -99,3 +102,5 @@ document.querySelectorAll('.btn').forEach(btn => {
     })
   );
 });
+
+setMode('monthly');
