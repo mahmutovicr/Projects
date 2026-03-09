@@ -1,66 +1,53 @@
-const btnMonthly = document.getElementById('btn-monthly');
-const btnNeutral = document.getElementById('btn-neutral');
-const btnAnnual = document.getElementById('btn-annual');
-const segBtns = [btnMonthly, btnNeutral, btnAnnual];
+const track = document.getElementById('tri-track');
+const knob = document.getElementById('tri-knob');
+const lblMonthly = document.getElementById('lbl-monthly');
+const lblAnnual = document.getElementById('lbl-annual');
 
 const monthly = [9, 29, 79];
 const annual = [7, 23, 63];
 
 let currentMode = 'neutral';
 
-function setActive(btn) {
-  segBtns.forEach(b => b.classList.remove('seg-active'));
-  btn.classList.add('seg-active');
-}
-
-function animateAmount(el, end) {
-  const start = parseInt(el.textContent);
-  const t0 = performance.now();
-  const tick = now => {
-    const p = Math.min((now - t0) / 420, 1);
-    const ease = 1 - Math.pow(1 - p, 3);
-    el.textContent = Math.round(start + (end - start) * ease);
-    if (p < 1) requestAnimationFrame(tick);
-  };
-  requestAnimationFrame(tick);
-}
-
-function applyMode(mode) {
+function setMode(mode) {
   currentMode = mode;
+  knob.classList.remove('pos-monthly', 'pos-neutral', 'pos-annual');
+  knob.classList.add('pos-' + mode);
+  lblMonthly.classList.toggle('active', mode === 'monthly');
+  lblAnnual.classList.toggle('active', mode === 'annual');
+
   const isAnnual = mode === 'annual';
-  const isMonthly = mode === 'monthly' || mode === 'neutral';
 
   document.querySelectorAll('.amount').forEach((el, i) => {
+    const start = parseInt(el.textContent);
     const end = isAnnual ? annual[i] : monthly[i];
-    animateAmount(el, end);
+    const t0 = performance.now();
+    const tick = now => {
+      const p = Math.min((now - t0) / 420, 1);
+      const ease = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(start + (end - start) * ease);
+      if (p < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
   });
 
-  [0, 1, 2].forEach(i => {
-    const note = document.getElementById('note-' + i);
-    if (!note) return;
-    note.classList.remove('show');
+  document.querySelectorAll('.annual-note').forEach((noteEl, i) => {
+    noteEl.classList.remove('show');
     setTimeout(() => {
-      note.textContent = isAnnual
+      noteEl.textContent = isAnnual
         ? '$' + (annual[i] * 12) + '/yr · save $' + ((monthly[i] - annual[i]) * 12)
         : '';
-      if (isAnnual) note.classList.add('show');
+      if (isAnnual) noteEl.classList.add('show');
     }, 180);
   });
 }
 
-btnMonthly.addEventListener('click', () => {
-  setActive(btnMonthly);
-  applyMode('monthly');
-});
-
-btnNeutral.addEventListener('click', () => {
-  setActive(btnNeutral);
-  applyMode('neutral');
-});
-
-btnAnnual.addEventListener('click', () => {
-  setActive(btnAnnual);
-  applyMode('annual');
+track.addEventListener('click', e => {
+  const rect = track.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const third = rect.width / 3;
+  if (x < third) setMode('monthly');
+  else if (x < third * 2) setMode('neutral');
+  else setMode('annual');
 });
 
 let selectedCard = null;
