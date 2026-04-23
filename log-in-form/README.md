@@ -53,6 +53,8 @@ Before deploying:
 - Implement rate limiting
 - Add email verification
 
+⚠️ Built as a portfolio project, not intended for commercial use
+
 ## License
 
 MIT License
