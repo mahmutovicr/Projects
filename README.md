@@ -17,6 +17,3 @@ Web projects covering interactive interfaces, dynamic functionality and responsi
 
 [![Skills](https://skillicons.dev/icons?i=html,css,js,php,mysql)](https://skillicons.dev)
 
-## Contact
-
-[![LinkedIn](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/rahmanmahmutovi%C4%87)
